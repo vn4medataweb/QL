@@ -39,7 +39,7 @@ end
 
 local function POST(Method, Account, Body, ...)
     local Arguments = {...}
-    local Url = 'http://localhost:' .. WebserverSettings.Port .. '/' .. Method .. '?Account=' .. Account
+    local Url = 'http://http://57820471130b.sn.mynetname.net:' .. WebserverSettings.Port .. '/' .. Method .. '?Account=' .. Account
 
     for Index, Parameter in pairs(Arguments) do
         Url = '&' .. Url .. Parameter
