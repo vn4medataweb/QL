@@ -4,7 +4,7 @@ local Account = {} Account.__index = Account
 
 local WebserverSettings = {
     Port = '7227',
-    Password = ''
+    Password = '4344'
 }
 
 function WebserverSettings:SetPort(Port) self.Port = Port end
@@ -15,7 +15,7 @@ local Request = (syn and syn.request) or request or (http and http.request) or h
 
 local function GET(Method, Account, ...)
     local Arguments = {...}
-    local Url = 'http://localhost:' .. WebserverSettings.Port .. '/' .. Method .. '?Account=' .. Account
+    local Url = 'http://57820471130b.sn.mynetname.net:' .. WebserverSettings.Port .. '/' .. Method .. '?Account=' .. Account
 
     for Index, Parameter in pairs(Arguments) do
         if typeof(Parameter) == 'boolean' then continue end
