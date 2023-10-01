@@ -4,7 +4,7 @@ local Account = {} Account.__index = Account
 
 local WebserverSettings = {
     Port = '7227',
-    Password = '4344'
+    Password = ''
 }
 
 function WebserverSettings:SetPort(Port) self.Port = Port end
